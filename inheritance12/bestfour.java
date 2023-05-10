@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//program to store score find the best four subjects of a student
 class Iscscores {
     int number[][];
 

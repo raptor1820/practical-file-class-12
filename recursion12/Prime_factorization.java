@@ -1,14 +1,16 @@
-import java.util.Scanner;
+import java.util.Scanner; //importing scanner
 
 public class Prime_factorization {
     int M;
     int N;
 
+    // parameterized constructor
     Prime_factorization(int mm, int nn) {
         M = mm;
         N = nn;
     }
 
+    // method to print prime factors of a number
     void printPrimeFactors(int a, int b) {
         if (a == 1) {
             return;
@@ -21,6 +23,7 @@ public class Prime_factorization {
         }
     }
 
+    // method to display prime factors of all numbers from M+1 to N
     void display() {
         for (int i = M + 1; i < N; i++) {
             System.out.print(i + ": ");

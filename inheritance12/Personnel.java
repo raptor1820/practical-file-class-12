@@ -1,4 +1,4 @@
-// implementation of Employee added because the program wont run otherwise
+// implementation added to test the program
 class Employee {
     String name;
     String desig;
@@ -21,6 +21,7 @@ public class Personnel extends Employee {
     int netSalary;
 
     Personnel(String name, String desig, String dept, int bsalary) {
+        // calling super class constructor
         super(name, desig, dept);
         this.bsalary = bsalary;
         incentive = desig.equals("manager") ? 5000 : 0;

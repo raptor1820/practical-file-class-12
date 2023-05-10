@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner; // import the Scanner class
 
 public class Krishnamurty {
     int M, N;
@@ -8,6 +8,7 @@ public class Krishnamurty {
         N = nn;
     }
 
+    // method to find factorial of a number recursively
     int factorial(int X) {
         if (X == 0) {
             return 1;
@@ -16,6 +17,7 @@ public class Krishnamurty {
         }
     }
 
+    // method to check if a number is Krishnamurty or not
     boolean isKrishnamurty(int X) {
         boolean flag = false;
         int sum = 0;
@@ -33,6 +35,7 @@ public class Krishnamurty {
         return flag;
     }
 
+    // method to print all Krishnamurty numbers between M and N
     void printAll() {
         for (int i = M; i <= N; i++) {
             if (isKrishnamurty(i)) {

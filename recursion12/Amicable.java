@@ -1,13 +1,15 @@
-import java.util.Scanner;
+import java.util.Scanner; // to import Scanner class
 
 public class Amicable {
     int m, n;
 
+    // parameterized constructor
     Amicable(int mm, int nn) {
         m = mm;
         n = nn;
     }
 
+    // method to find sum of divisors of a number
     int sumOf_Divisor(int n, int x) {
         if (x < n) {
             if (n % x == 0) {
@@ -20,6 +22,7 @@ public class Amicable {
 
     }
 
+    // method to check if a number is Amicable or not
     void checkAmicable() {
         int s1 = sumOf_Divisor(n, 1);
         int s2 = sumOf_Divisor(m, 1);
@@ -29,6 +32,7 @@ public class Amicable {
             System.out.println("Not an Amicable number");
     }
 
+    // main method
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int m = sc.nextInt();

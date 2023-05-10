@@ -19,7 +19,9 @@ class Employee {
 public class Salary extends Employee {
     float basic;
 
+    // parameterized constructor
     Salary(int no, String name, String desig, float salary) {
+        // calling super class constructor
         super(no, name, desig);
         basic = salary;
     }
@@ -34,6 +36,7 @@ public class Salary extends Employee {
     }
 
     void display() {
+        // calling super class method
         super.display();
         calculate();
     }

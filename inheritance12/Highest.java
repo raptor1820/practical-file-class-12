@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//superclass defined to test the program
 class Record { // This is the superclass
     String[] n;
     int[] m;
@@ -33,6 +34,7 @@ public class Highest extends Record { // This is the subclass
     int ind;
 
     Highest(int cap) {
+        // call to superclass constructor
         super(cap);
         ind = 0;
     }
@@ -48,6 +50,7 @@ public class Highest extends Record { // This is the subclass
     }
 
     void display() {
+        // call to superclass method
         super.display();
         int high = m[ind];
         for (int i = 0; i < size; i++) {

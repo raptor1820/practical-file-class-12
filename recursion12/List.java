@@ -1,4 +1,6 @@
-import java.util.Scanner;
+
+//program for recusive binary search
+import java.util.Scanner; //importing scanner
 
 public class List {
     int arr[];
@@ -9,6 +11,7 @@ public class List {
         arr = new int[N];
     }
 
+    // method to read array
     void readArray() {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < N; i++) {
@@ -16,6 +19,7 @@ public class List {
         }
     }
 
+    // method to display array
     boolean isSorted(int a[], int n) {
         if (n == 1) {
             return true;
@@ -26,6 +30,7 @@ public class List {
         return isSorted(a, n - 1);
     }
 
+    // method to search an element in array
     int binarySearch(int first, int last, int X) {
         if (first > last) {
             return -1;
@@ -40,6 +45,7 @@ public class List {
         return binarySearch(mid + 1, last, X);
     }
 
+    // method to find an element in array
     void find() {
         Scanner sc = new Scanner(System.in);
         int X = sc.nextInt();

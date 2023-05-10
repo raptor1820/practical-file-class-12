@@ -1,3 +1,4 @@
+//Bank class has been implemented to test the program
 class Bank {
     String name;
     int accno;
@@ -27,7 +28,9 @@ public class Saving_Account extends Bank {
     double rate;
     double si;
 
+    // parameterized constructor
     Saving_Account(String name, int accno, double balance, double rate) {
+        // calling super class constructor
         super(name, accno, balance);
         this.rate = rate;
     }
@@ -42,13 +45,14 @@ public class Saving_Account extends Bank {
             System.out.println("Insufficient Balance");
         } else if (balance - amt < 500) {
             balance -= amt;
-            balance = balance - ((500 - balance) / 10);
+            balance = balance - ((500 - balance) / 10); // charging penalty
         } else {
             balance -= amt;
         }
     }
 
     void display() {
+        // calling super class method
         super.display();
         System.out.println("Interest earned: " + si);
     }
