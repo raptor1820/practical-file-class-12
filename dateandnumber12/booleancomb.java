@@ -9,6 +9,7 @@ public class booleancomb {
         int n = sc.nextInt();
         int i = 0;
         while (i < Math.pow(2, n)) {
+            // binary string method
             String s = Integer.toBinaryString(i);
             int l = s.length();
             if (l < n) {

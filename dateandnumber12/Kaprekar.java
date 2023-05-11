@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //importing Scanner class
 
 public class Kaprekar {
     public static void main(String[] args) {
@@ -15,9 +15,11 @@ public class Kaprekar {
                 digits++;
                 temp /= 10;
             }
+            // find power of half the digits
             int pow = (int) Math.pow(10, digits / 2);
             if (i != 1 && square % pow == 0)
                 continue;
+            // split and check
             int sum = square / pow + square % pow;
             if (sum == i && sum % 10 != 0) {
                 count++;

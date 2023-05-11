@@ -8,6 +8,7 @@ public class digitprod {
         int i = 9;
         int[] a = new int[10];
         int j = 0;
+        // each factor turns on an element in the array
         while (i > 1) {
             if (n % i == 0) {
                 a[j] = i;
@@ -18,6 +19,8 @@ public class digitprod {
             }
         }
         if (n == 1) {
+            // since the factors are in descending order, we print in reverse for the
+            // smallest no.
             for (int k = j - 1; k >= 0; k--) {
                 System.out.print(a[k]);
             }

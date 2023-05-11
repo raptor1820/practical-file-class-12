@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //importing Scanner class
 
 class Unique {
     public static void main(String[] args) {
@@ -9,6 +9,7 @@ class Unique {
         for (int i = a; i <= b; i++) {
             // check if digits of number are unique
             int temp = i;
+            // each element in the array represents a digit
             boolean[] digits = new boolean[10];
             boolean unique = true;
             while (temp > 0) {

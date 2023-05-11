@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //importing Scanner class
 
 public class NaturalCombo {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class NaturalCombo {
         sc.close();
 
         int s, a = 1;
-
+        // n/2 to prevent repeats
         while (a <= n / 2) {
             s = a;
             String combo = a + "";
