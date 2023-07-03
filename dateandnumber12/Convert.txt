@@ -1,0 +1,19 @@
+1. import scanner class
+2. declare class Convert
+3. declare instance vaeriables n,d,m and y
+4. declare the Convert constructor to initialize the instance variables to the value 0, except for m which is initialized to 1
+5. define the method accept
+6. initialize the scanner class object
+7. accept the value of n using Scanner class object
+8. accept the value of y using Scanner class object
+9. define method dayToDate
+10. declare an array daysinmonth which stores the number of days in each month in order
+11. if else if ladder to check for leap year and set daysinmonth[1] to 29 if it is a leap year
+12. define method display
+13. switch case to find the month and build a string with the date
+14. define method main
+15. declare an object of class Convert
+16. call the accept method using the object
+17. call the dayToDate method using the object
+18. call the display method using the object
+19. end

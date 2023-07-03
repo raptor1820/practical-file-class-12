@@ -1,0 +1,8 @@
+1. Import java Scanner class
+2. declare class booleancomb
+3. declare main method
+4. declare Scanner object
+5. Taking input for the number of variables =n
+6. Iterating 2^n times and printing the binary representation of the 0 to 2^n-1 using the Integer.toBinaryString() method
+When seen in column form, the binary numbers represent the truth table
+7. Closing scanner object and closing the main method and the class
